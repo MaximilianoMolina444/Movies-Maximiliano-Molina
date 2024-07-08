@@ -1,0 +1,47 @@
+.banner{
+    width: 95%;
+    height: 70vh;
+}
+.showMore{
+    background-color: #6D38E0;
+    color: white;
+    text-align: center;
+    width: 40vh;
+    height: 15vh;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+.tituloMovies{
+    text-align: center;
+    background-color: #6D38E0;
+    color: white;
+    width: 100%;    
+    height: 5rem;
+    margin: 2px;
+    padding-top: 5px ;
+}
+.activa{
+    background-color: #DD00FF;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+    background-color: #D2CCFF;
+    height: 3rem;
+    margin-top: 2rem;
+}
+.raleway{
+    font-family: "Raleway", sans-serif;
+}
+@media (max-width: 425px){
+    .oculto{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 20vh;
+    }
+}
+

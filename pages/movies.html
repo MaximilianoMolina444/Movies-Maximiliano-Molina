@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Recursos Moviestack/Moviestack_favicon.png" />
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieStack-movies</title>
+  </head>
+  <body>
+    <header class="bg-gray-800">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex">
+            <a href="../index.html"
+              ><img
+                src="../Recursos Moviestack/Moviestack_favicon.png"
+                alt="logo de la pagina"
+                class="w-40 oculto"
+            /></a>
+            <p
+              class="flex items-center justify-center text-white text-5xl raleway"
+            >
+              MovieStack
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex items-center space-x-8">
+              <li class="">
+                <a href="../index.html" class="text-white lg:text-4xl raleway"
+                  >Home</a
+                >
+              </li>
+              <li class="activa">
+                <a href="movies.html" class="text-white lg:text-4xl raleway"
+                  >Movies</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white lg:text-4xl raleway">Favs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:hidden">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+          <ul class="mt-4 space-y-4">
+            <li>
+              <a
+                href="./index.html"
+                class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Home</a
+              >
+            </li>
+            <li class="activa">
+              <a href="" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Movies</a
+              >
+            </li>
+            <li>
+              <a href="" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Favs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="tituloMovies">
+        <p class="text-6xl raleway">Movies</p>
+      </div>
+      <div
+        id="peliculasContainer"
+        class="flex flex-wrap justify-center gap-3 pb-3 mt-3"
+      ></div>
+    </main>
+    <footer>
+      <div>
+        <p>MindHub - Cohort 55</p>
+      </div>
+      <div>
+        <p>Maximiliano Molina</p>
+      </div>
+    </footer>
+
+    <script src="../tailwind.config.js"></script>
+    <script src="../data.js"></script>
+    <script src="../main.js"></script>
+  </body>
+</html>

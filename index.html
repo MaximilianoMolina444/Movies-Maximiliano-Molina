@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Recursos Moviestack/Moviestack_favicon.png" />
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MovieStack</title>
+  </head>
+  <body>
+    <header class="bg-gray-800">
+      <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex">
+            <a href="index.html"
+              ><img
+                src="./Recursos Moviestack/Moviestack_favicon.png"
+                alt=" icono de la pagina"
+                class="w-40 oculto"
+            /></a>
+            <p class="flex items-center justify-center text-white text-5xl raleway">
+              MovieStack
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <ul class="flex items-center space-x-8">
+              <li class="activa">
+                <a href="" class="text-white lg:text-4xl raleway">Home</a>
+              </li>
+              <li>
+                <a href="./pages/movies.html" class="text-white lg:text-4xl raleway"
+                  >Movies</a
+                >
+              </li>
+              <li><a href="#" class="text-white lg:text-4xl raleway">Favs</a></li>
+            </ul>
+          </div>
+          <div class="md:hidden">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+          <ul class="mt-4 space-y-4">
+            <li class="activa">
+              <a
+                href="index.html"
+                class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/movies.html"
+                class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Movies</a
+              >
+            </li>
+            <li>
+              <a href="" class="block px-4 py-2 text-white bg-gray-900 rounded"
+                >Favs</a
+              >
+            </li>
+            >
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex justify-center items-center">
+        <img
+          src="./Recursos Moviestack/banner.jpg"
+          alt="banner de peliculas"
+          class="banner"
+        />
+      </div>
+      <div class="m-16">
+        <p class="lg:text-xl raleway">
+          Welcome to MovieStack! Your ultimate portal for discovering the
+          fascinating world of cinema. Here at MovieStack, we are passionate
+          about sharing detailed reviews, in-depth analyses, and personalized
+          recommendations to help you find your next favorite movie. Explore our
+          categories, from blockbuster hits to hidden gems of independent
+          cinema. Dive into our articles, recommendation lists, and unbiased
+          critiques to help you decide what to watch next. Are you a fan of
+          classics or do you prefer the latest releases? Whatever your
+          preference, MovieStack has something special for you. Browse our site,
+          discover new stories, and join our community of passionate movie
+          lovers. Your next great cinematic adventure begins here at MovieStack!
+        </p>
+      </div>
+      <section>
+        <h2 class="m-16 align-center lg:text-xl raleway">
+          Click below to explore more movies and discover a wide variety of
+          genres and cinematic styles that will keep you entertained and
+          excited. Curious to know the audience favorites? Click here to see the
+          most loved and recommended movies by our community of film
+          enthusiasts.
+        </h2>
+        <div class="flex justify-around items-center">
+          <div class="showMore shadow-2xl">
+            <p class="md:text-lg lg:text-2xl my-4 releway">Show More Movies</p>
+            <a
+              href="./pages/movies.html"
+              class="inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-pink-500 to-pink-800 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out border-2"
+            >
+              Click Here
+            </a>
+          </div>
+          <div class="showMore">
+            <p class="md:text-lg lg:text-2xl my-4 releway">Show More Favs</p>
+            <a
+              href="#"
+              class="inline-block text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-pink-500 to-pink-800 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out border-2"
+            >
+              Click Here
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>MindHub - Cohort 55</p>
+      </div>
+      <div>
+        <p>Maximiliano Molina</p>
+      </div>
+    </footer>
+    <script src="./tailwind.config.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
